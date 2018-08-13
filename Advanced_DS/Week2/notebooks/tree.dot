@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Petal Width <= -0.547\ngini = 0.6659\nsamples = 90\nvalue = [29, 32, 29]"] ;
+1 [label="gini = 0.0\nsamples = 29\nvalue = [29, 0, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Petal Width <= 0.7171\ngini = 0.4988\nsamples = 61\nvalue = [0, 32, 29]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Petal Length <= 0.9787\ngini = 0.1139\nsamples = 33\nvalue = [0, 31, 2]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0605\nsamples = 32\nvalue = [0, 31, 1]"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]"] ;
+3 -> 5 ;
+6 [label="Petal Length <= 0.6337\ngini = 0.0689\nsamples = 28\nvalue = [0, 1, 27]"] ;
+2 -> 6 ;
+7 [label="gini = 0.5\nsamples = 2\nvalue = [0, 1, 1]"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 26\nvalue = [0, 0, 26]"] ;
+6 -> 8 ;
+}
